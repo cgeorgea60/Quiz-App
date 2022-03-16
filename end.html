@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Congrats!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="layout">
+        <h1 id="finalScore"></h1>
+        <form>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="username"
+            autocomplete="off"
+          />
+          <button
+            class="btn"
+            type="submit"
+            id="savScoreBtn"
+            disabled
+            onclick="saveHighScore(event)"
+          >
+            save
+          </button>
+        </form>
+        <button class="btn">
+          <a href="game.html">play again</a>
+        </button>
+        <button class="btn"><a href="index.html">home</a></button>
+      </div>
+      <script src="./end.js"></script>
+    </div>
+  </body>
+</html>

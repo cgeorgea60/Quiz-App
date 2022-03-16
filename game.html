@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="loader"></div>
+      <div class="quiz-container hidden">
+        <div class="title">multi-choice quiz</div>
+        <hr />
+        <div class="score">
+          <div class="question-number">
+            <span id="mine"> </span>
+            <div class="progressbar">
+              <div class="progressbarfull"></div>
+            </div>
+          </div>
+          <span class="marks"></span>
+        </div>
+        <div class="question">
+          <h3 id="question"></h3>
+        </div>
+
+        <div class="option-list">
+          <h4>Choose only one answer.</h4>
+
+          <!-- single option-->
+
+          <label for="choice1" class="option-text" data-number="1">
+            <input
+              type="radio"
+              id="choice1"
+              name="answer"
+              class="radio-input"
+            />
+            <div class="option"></div>
+          </label>
+
+          <!-- single option-->
+          <label for="choice2" class="option-text" data-number="2">
+            <input
+              type="radio"
+              id="choice2"
+              name="answer"
+              class="radio-input"
+            />
+            <div class="option"></div>
+          </label>
+          <!-- single option-->
+          <label for="choice3" class="option-text" data-number="3">
+            <input
+              type="radio"
+              id="choice3"
+              name="answer"
+              class="radio-input"
+            />
+            <div class="option"></div>
+          </label>
+          <!-- single option-->
+          <label for="choice4" class="option-text" data-number="4">
+            <input
+              type="radio"
+              id="choice4"
+              name="answer"
+              class="radio-input"
+            />
+            <div clas="option"></div>
+          </label>
+          <div class="btn-container">
+            <button class="btn">next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./App.js"></script>
+  </body>
+</html>
